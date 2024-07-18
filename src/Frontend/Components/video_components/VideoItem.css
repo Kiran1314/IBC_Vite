@@ -1,0 +1,47 @@
+.video-item {
+    position: relative;
+    cursor: pointer;
+    height: auto;
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: auto;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    text-shadow: 0 0 10px black;
+    pointer-events: none;
+  }
+  
+  .serv-video-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .serv-video-item .video {
+    width: 100%;
+    height: auto;
+  }
+  
+  .serv-video-item .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+  }
+  
