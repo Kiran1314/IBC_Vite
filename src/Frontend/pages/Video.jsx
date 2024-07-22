@@ -13,7 +13,7 @@ import VideoGallery from '../Components/video_components/VserviceGallery';
 
 
 const videos = [
-  { id: 1, videoSrc: 'https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Videos%2FServiceVideoCat%2Fservice_video1~1.webm?alt=media&token=7aea5b07-ba7d-4f08-8ab9-98c700c40ce8', caption: 'Corporate Video', link: '/corporate' },
+  { id: 1, videoSrc: 'https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Videos%2FServiceVideoCat%2Fservice_video1.webm?alt=media&token=372e0e50-7748-4775-83c8-ebdcc0131e1b', caption: 'Corporate Video', link: '/corporate' },
   { id: 2, videoSrc: 'https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Videos%2FServiceVideoCat%2Fservice_video2~1.webm?alt=media&token=41de09b8-a3c4-418b-8b9e-081db8582c42', caption: 'Timelapse Video', link: '/aerialtmlps' },
   { id: 3, videoSrc: 'https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Videos%2FServiceVideoCat%2Fservice_video3~1.webm?alt=media&token=4bff0fad-6dde-4064-babf-fe740bfc64d6', caption: 'Dubbing & Tutorial', link: '/dubbingtut' },
   { id: 4, videoSrc: 'https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Videos%2FServiceVideoCat%2Fservice_video4~1.webm?alt=media&token=3a923004-7376-492d-afc3-d778461cc839', caption: 'Event & Exhibition', link: '/eventsvideo' },

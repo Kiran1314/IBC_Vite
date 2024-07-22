@@ -9,8 +9,8 @@ import ytblive from '../../Frontend/assets/img/images/ytblive.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  faFacebookF , faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faMobile, faPhone } from '@fortawesome/free-solid-svg-icons';
+import {  faFacebookF , faInstagram, faLinkedin, faYoutube, faThreads } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faMobile } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Footer() {
@@ -62,7 +62,7 @@ export default function Footer() {
                          <a href="tel:+971 55 2912810"><FontAwesomeIcon icon={faMobile} />  &nbsp;  +971 55 2912810</a> 
                        </p>
                        <a target='_blank' rel="noreferrer"  href='http://discovery.ariba.com/profile/AN01411288101'><ul className="social-list" >
-                       <li> <LazyLoadImage src={Ariba} alt='Ariba' style={{paddinTop:30}}  /> </li>
+                       <li> <LazyLoadImage src={Ariba} alt='Ariba' style={{marginTop:28}}  /> </li>
                        
                     </ul></a>
                                       
@@ -89,6 +89,11 @@ export default function Footer() {
                         <li className="instagram">
                             <a rel="noreferrer" href="https://www.instagram.com/ibcstudiouae/" target='_blank' aria-label="IBC Studio InstagramPg"><FontAwesomeIcon icon={faInstagram} /></a>
                         </li>
+
+                        <li className="threads">
+                            <a rel="noreferrer" href="https://www.threads.net/@ibcstudiouae" target='_blank' aria-label="IBC Studio ThreadsPg"><FontAwesomeIcon icon={faThreads} /></a>
+                        </li>
+
                         <li className="Youtube">
                             <a rel="noreferrer" href="https://www.youtube.com/@ibcstudiome" target='_blank' aria-label="IBC Studio YoutubePlist" ><FontAwesomeIcon icon={faYoutube} /></a>
                         </li>

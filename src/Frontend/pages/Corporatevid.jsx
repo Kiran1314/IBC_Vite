@@ -13,9 +13,12 @@ import { Seo } from '../Components/Seo';
 const videos = [
   {
     id: 1,
-    videoId: 'YH4JeCUJ71o',
-    thumbnail: 'https://img.youtube.com/vi/YH4JeCUJ71o/0.jpg',
+    videoId: 'SfsAD1Nhmm8',
+    thumbnail: 'https://img.youtube.com/vi/SfsAD1Nhmm8/0.jpg',
   },
+  
+  
+  
   {
     id: 2,
     videoId: '-aPj_zk-Z3A',
@@ -43,21 +46,26 @@ const videos = [
   },
   {
     id: 7,
+    videoId: 'YH4JeCUJ71o',
+    thumbnail: 'https://img.youtube.com/vi/YH4JeCUJ71o/0.jpg',
+  },
+  {
+    id: 8,
     videoId: 'ORqROH8rsJ4',
     thumbnail: 'https://img.youtube.com/vi/ORqROH8rsJ4/0.jpg',
   },
   {
-    id: 8,
+    id: 9,
     videoId: 'F_XOl5dmdE8',
     thumbnail: 'https://img.youtube.com/vi/F_XOl5dmdE8/0.jpg',
   },
   {
-    id: 9,
+    id: 10,
     videoId: 'QSmXDvSTM0E',
     thumbnail: 'https://img.youtube.com/vi/QSmXDvSTM0E/0.jpg',
   },
   {
-    id: 10,
+    id: 11,
     videoId: 'Xsym-oTEwEw',
     thumbnail: 'https://img.youtube.com/vi/Xsym-oTEwEw/0.jpg',
   },
@@ -82,12 +90,12 @@ const videos = [
     thumbnail: 'https://img.youtube.com/vi/LQZTw2qBOQw/0.jpg',
   },
   {
-    id: 15,
+    id: 16,
     videoId: 'cwX0oWz06u4',
     thumbnail: 'https://img.youtube.com/vi/cwX0oWz06u4/0.jpg',
   },
   {
-    id: 16,
+    id: 17,
     videoId: 'z54WbCZ1XIw',
     thumbnail: 'https://img.youtube.com/vi/z54WbCZ1XIw/0.jpg',
   },

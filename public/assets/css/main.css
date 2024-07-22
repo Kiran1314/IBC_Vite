@@ -11300,3 +11300,21 @@ header .rt .lk {
   align-items: stretch;
   
 }
+
+
+.img-fluid {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+.modal-body {
+   width: auto;
+}
+.modal-content {
+  
+  padding: -10px;
+}

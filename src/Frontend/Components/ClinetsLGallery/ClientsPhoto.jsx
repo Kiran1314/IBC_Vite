@@ -99,7 +99,6 @@ const logoData = [
                 { id: 30, url: "https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Images%2FClientsLogo%2FHSBC-.webp?alt=media&token=8ed2a77f-dbd6-43ee-ac86-a8061e4291bc"},
                 { id: 31, url: "https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Images%2FClientsLogo%2FHabtoor.webp?alt=media&token=327996cb-d019-4be1-a252-88ade1d9b7be"},
                 { id: 29, url: "https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Images%2FClientsLogo%2FHealthpoint.webp?alt=media&token=b88029b7-753e-4cd5-9d4e-46c934189953"},
-                { id: 30, url: "https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Images%2FClientsLogo%2FHilton-120x75.webp?alt=media&token=17978a1a-8033-4e76-b70a-68184822e6cf"},
                 { id: 31, url: "https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Images%2FClientsLogo%2FHilton.webp?alt=media&token=3cea233d-9bf3-45c4-bc7b-a0c9400bda15"},
                 { id: 29, url: "https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Images%2FClientsLogo%2FHoliday-Me.webp?alt=media&token=33b843ae-2db4-4a56-9877-d79e311073f9"},
                 { id: 30, url: "https://firebasestorage.googleapis.com/v0/b/ibc-studio.appspot.com/o/Images%2FClientsLogo%2FIBIS-Hotel.webp?alt=media&token=ed34b03e-8e8d-429d-961b-be892df4b008"},

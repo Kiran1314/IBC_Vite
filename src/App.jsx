@@ -41,7 +41,7 @@ import BlogPost3 from '@/Frontend/pages/BlogPost3';
 import StillcovGPhoto from '@/Frontend/pages/StillcovGPhoto';
 import SoundstgGPhoto from '@/Frontend/pages/SoundstgGPhoto';
 import PaypalPayment from '@/Frontend/pages/PaypalPayment';
-
+import Faq from './Frontend/pages/Faq';
 
 function App() {
   
@@ -69,6 +69,7 @@ function App() {
             <Route path="/audio" element={<Audio/>} />
             <Route path="/webdesign" element={<Webdesign/>} />
             <Route path="/video" element={<Video/>} />
+            <Route path="/faq" element={<Faq/>} />
             <Route path="/corporate" element={<Corporatevid/>} />
             <Route path="/photography" element={<Industrialphotography/>} />
             <Route path="/prodphoto" element={<ProdPhoto/>} />

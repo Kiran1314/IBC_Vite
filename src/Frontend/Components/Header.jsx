@@ -2,7 +2,9 @@ import React from 'react'
 import Logo from './Logo.png'
 import ytblive from '../../Frontend/assets/img/images/ytblive.png'
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faFacebookF , faInstagram, faLinkedin, faThreads, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {  faLocationDot,faEnvelope, faMobile } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
   return (
@@ -101,7 +103,7 @@ export default function Header() {
                     </div>
                     <p>Whether you're looking to produce a hit single, create a captivating commercial, or bring your cinematic masterpiece to life, IBC Studio is here to make it happen. Contact us today to learn more about how we can help 
                         you achieve your audio and video production goals. Let's create something extraordinary together.</p>
-                    <a href="contact.html" className="rr-primary-btn">Contact Us</a>
+                    <a href="/contact" className="rr-primary-btn">Contact Us</a>
                 </div>
                 <div className="side-menu-contact">
                     <div className="side-menu-header">
@@ -109,24 +111,25 @@ export default function Header() {
                     </div>
                     <ul className="side-menu-list">
                         <li>
-                            <i className="fas fa-map-marker-alt"></i>
-                            <p>P.O. Box: 120472, Dubai, UAE</p>
+                        <FontAwesomeIcon icon={faLocationDot} /> &nbsp;
+                            <p>IBN Batuta Gate Office, P.O. Box: 120472, Dubai, UAE</p>
                         </li>
                         <li>
-                            <i className="fas fa-phone"></i>
+                        <FontAwesomeIcon icon={faMobile} /> &nbsp;
                             <a href="tel:+971 55 2912810">+971 55 2912810</a>
                         </li>
                         <li>
-                            <i className="fas fa-envelope-open-text"></i>
+                        <FontAwesomeIcon icon={faEnvelope} /> &nbsp;
                             <a href="mailto:info@ibcstudio.com">info@ibcstudio.com</a>
                         </li>
                     </ul>
                 </div>
                 <ul className="side-menu-social">
-                    <li className="facebook"><a href="https://www.facebook.com/IBCStudioUAE/"><i className="fab fa-facebook-f"></i></a></li>
-                    <li className="instagram"><a href="https://www.instagram.com/ibcstudiouae/"><i className="fab fa-instagram"></i></a></li>
-                    <li className="linkedin"><a href="https://www.linkedin.com/in/ibcstudiouae/"><i className="fab fa-linkedin"></i></a></li>
-                    <li className="youtube"><a href="https://www.youtube.com/@ibcstudiome"><i className="fab fa-youtube"></i></a></li>
+                    <li className="facebook"><a href="https://www.facebook.com/IBCStudioUAE/">  <FontAwesomeIcon icon={faFacebookF} /> </a></li>
+                    <li className="instagram"><a href="https://www.instagram.com/ibcstudiouae/">  <FontAwesomeIcon icon={faInstagram} /> </a></li>
+                    <li className="threads"><a href="https://www.threads.net/@ibcstudiouae">  <FontAwesomeIcon icon={faThreads} /> </a></li>
+                    <li className="linkedin"><a href="https://www.linkedin.com/in/ibcstudiouae/">  <FontAwesomeIcon icon={faLinkedin} /> </a></li>
+                    <li className="youtube"><a href="https://www.youtube.com/@ibcstudiome">  <FontAwesomeIcon icon={faYoutube} /> </a></li>
                     
                 </ul>
             </div>

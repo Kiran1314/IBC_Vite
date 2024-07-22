@@ -24,7 +24,7 @@ const BillForm = ({ onSubmit }) => {
           required
         /></div>
       </div>
-
+<br/>
       <div className='form-group row'>
         <label class="col-sm-2 col-form-label">Bill Amount (USD $)</label>
         <div class="col-sm-3">
@@ -36,7 +36,7 @@ const BillForm = ({ onSubmit }) => {
           required
         /></div>
       </div>
-
+        <br/>
       <div className='form-group row'>
         <label class="col-sm-2 col-form-label">Invoice Number</label>
         <div class="col-sm-3">
@@ -45,11 +45,12 @@ const BillForm = ({ onSubmit }) => {
           value={invoiceId}
           onChange={(e) => setInvoiceId(e.target.value)}
           required
-        />
+        /> 
       </div></div>
       <div className='form-group row'>
       <div class="col-sm-2"></div>
-      <div class="col-sm-3">
+      
+      <div class="col-sm-3" style={{marginTop:30}}>
       <button className='btn btn-primary' type="submit">Submit</button>
       </div></div>
     </form></div>
