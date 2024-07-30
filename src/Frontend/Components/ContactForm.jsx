@@ -1,7 +1,7 @@
 // src/ContactForm.js
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-// import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
  
@@ -83,7 +83,7 @@ const notify = () => toast("Email sent successfully!");
           <textarea cols="30" rows="5" placeholder="Enter Your Message" className="form-control" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
         </div>
         <div className="mb-3">
-        {/* <ReCAPTCHA sitekey="6LeFuosUAAAAAMHGuHM25M14zdNbTz83ADNMG9AE"  onChange={onChange} /> */}
+        <ReCAPTCHA sitekey="6LeFuosUAAAAAMHGuHM25M14zdNbTz83ADNMG9AE"  onChange={onChange} /> 
 
         </div>
         <button type="submit" onClick={notify} className="btn btn-primary">Submit</button>
