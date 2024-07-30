@@ -70,7 +70,7 @@ const notify = () => toast("Email sent successfully!");
         </div>
         <div className="mb-3">
           <label className="form-label">Subject</label>
-          <input type="text" placeholder="Enter Subject/Sevice Looking for" className="form-control" name="subject" value={subject} onChange={(e) => setSubject(e.target.value)} required />
+          <input type="text" placeholder="Enter Subject/Service Looking for" className="form-control" name="subject" value={subject} onChange={(e) => setSubject(e.target.value)} required />
         </div>
         <div className="mb-3">
           <label className="form-label">Mobile</label>
