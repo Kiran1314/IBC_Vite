@@ -1,11 +1,11 @@
 import React from 'react'
 import footershp from '../assets/img/shapes/footer-shape.png'
-import paypal from '../assets/img/images/paypal.png'
-import Ariba from '../assets/img/images/Ariba.png'
+import paypal from '../assets/img/images/paypal.webp'
+import Ariba from '../assets/img/images/Ariba.webp'
  
 import Content from "../Components/readmore";
 import Content2 from "../Components/readmore2";
-import ytblive from '../../Frontend/assets/img/images/ytblive.png'
+import ytblive from '../../Frontend/assets/img/images/ytblive.webp'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

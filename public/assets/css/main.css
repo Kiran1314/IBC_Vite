@@ -3977,6 +3977,7 @@ START: Hero CSS
   position: relative;
   z-index: 1;
   overflow: hidden;
+ 
 }
 .hero-section .hero-bg-shape {
   position: absolute;
@@ -4134,7 +4135,7 @@ START: Hero CSS
   }
 }
 .hero-content .hero-btn {
-  background-image: url(../img/bg-img/hero-btn-bg.png);
+  background-image: url(../../assets/img/bg-img/hero-btn-bg.png);
   color: var(--rr-color-common-white);
   font-size: 60px;
   height: 180px;
@@ -4145,7 +4146,8 @@ START: Hero CSS
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  z-index: 1;
+  
+   
 }
 @media only screen and (max-width: 767px) {
   .hero-content .hero-btn {

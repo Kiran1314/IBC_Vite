@@ -1,86 +1,93 @@
 // src/ContactForm.js
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+ 
  
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    mobile: '',
-    message: '',
-  });
+  
+const onChange = () => {
 
-  const [captchaValue, setCaptchaValue] = useState(null);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+};
+const notify = () => toast("Email sent successfully!");
 
-  const handleCaptchaChange = (value) => {
-    setCaptchaValue(value);
-  };
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [mobile, setMobile] = useState('');
+  const [message, setMessage] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
+
     e.preventDefault();
-    if (!captchaValue) {
-      alert('Please verify you are not a robot.');
-      return;
-    }
 
-    const serviceId = 'YOUR_SERVICE_ID';
-    const templateId = 'YOUR_TEMPLATE_ID';
-    const userId = 'YOUR_USER_ID';
+  const serviceId = 'service_1ab1vfl';
+  const templateId = 'template_u4f1im2';
+  const publicKey = 'uo5jzZ8z_im3yAOGc';
 
-    try {
-      await emailjs.send(serviceId, templateId, formData, userId);
-      alert('Message sent successfully!');
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        mobile: '',
-        message: '',
-      });
-      setCaptchaValue(null);
-    } catch (error) {
-      console.error('Error sending message:', error);
-      alert('Failed to send message. Please try again later.');
-    }
+  const templateParams = {
+    from_name: name,
+    from_email: email,
+    to_name: 'IBC',
+    subject: subject,
+    message: message,
+    mobile: mobile,
+
   };
+     emailjs.send(serviceId, templateId, templateParams, publicKey)
+     .then((response) => {
+        console.log('Email sent successfully', response);
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMobile('');
+        setMessage('');
+     })
 
+.catch((error) => {
+
+  console.error('Error sending email', error);
+});
+
+ 
+
+} 
   return (
+    
     <div className="container">
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="emailForm" onSubmit={handleSubmit}>
         <div className="mb-3">
           <label className="form-label">Name</label>
-          <input type="text" className="form-control" name="name" value={formData.name} onChange={handleChange} required />
+          <input type="text" placeholder="Enter Name" className="form-control" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
         </div>
         <div className="mb-3">
           <label className="form-label">Email</label>
-          <input type="email" className="form-control" name="email" value={formData.email} onChange={handleChange} required />
+          <input type="email" placeholder="Enter Email" className="form-control" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
         </div>
         <div className="mb-3">
           <label className="form-label">Subject</label>
-          <input type="text" className="form-control" name="subject" value={formData.subject} onChange={handleChange} required />
+          <input type="text" placeholder="Enter Subject/Sevice Looking for" className="form-control" name="subject" value={subject} onChange={(e) => setSubject(e.target.value)} required />
         </div>
         <div className="mb-3">
           <label className="form-label">Mobile</label>
-          <input type="tel" className="form-control" name="mobile" value={formData.mobile} onChange={handleChange} required />
+          <input   type="tel" placeholder="Enter Your Contact Number" className="form-control" name="mobile" value={mobile} onChange={(e) => setMobile(e.target.value)} required />
+
+
         </div>
         <div className="mb-3">
           <label className="form-label">Message</label>
-          <textarea className="form-control" name="message" value={formData.message} onChange={handleChange} required></textarea>
+          <textarea cols="30" rows="5" placeholder="Enter Your Message" className="form-control" name="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
         </div>
         <div className="mb-3">
-          <ReCAPTCHA
-            sitekey="YOUR_RECAPTCHA_SITE_KEY"
-            onChange={handleCaptchaChange}
-          />
+        {/* <ReCAPTCHA sitekey="6LeFuosUAAAAAMHGuHM25M14zdNbTz83ADNMG9AE"  onChange={onChange} /> */}
+
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" onClick={notify} className="btn btn-primary">Submit</button>
+        <ToastContainer />
       </form>
     </div>
   );

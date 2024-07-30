@@ -9,7 +9,7 @@ import abtsh2 from '../assets/img/shapes/about-shape-2.png'
 import abticon1 from '../assets/img/icon/about-1.png'
 import abticon2 from '../assets/img/icon/about-2.png'
 import bgimg from '../assets/img/bg-img/page-header-bg.jpg'
-import aboutvideo from '../assets/video/IBC-PROFILE_1.webm'
+import aboutvideo from '../assets/video/About_IBC.webm'
 /* import about_bg from '../assets/img/images/aboutus_bg.png' */
 import img1 from '../assets/img/images/working_stills/img1.webp'
 import img2 from '../assets/img/images/working_stills/img2.webp'
@@ -81,11 +81,11 @@ export default function About() {
        <section className="about-section-2 pt-20 pb-0">
             <div className="container">
                 <div className="row about-wrap-2 gy-lg-0 gy-4 align-items-center">
-                    <div className="col-lg-5 col-md-12 col-sm-12">
+                    <div className="col-lg-6 col-md-12 col-sm-12">
                         <div className="about-img-box">
                             <div className="shapes">
                                 
-                                <video className="videoTag" autoPlay loop controls    style={{zIndex:999,marginTop:90,maxWidth:'100%'}} controlsList='nodownload' oncontextmenu='return false;'>
+                                <video className="videoTag" autoPlay loop controls  muted  style={{zIndex:999,marginTop:30,maxWidth:'100%'}} controlsList='nodownload' oncontextmenu='return false;'>
             <source src={aboutvideo} type='video/mp4'  />
             </video>
             <img className="shape shape-1" src={abtsh1} alt="about"/>
@@ -96,7 +96,7 @@ export default function About() {
                             
                         </div>
                     </div>
-                    <div className="col-lg-7 col-md-12">
+                    <div className="col-lg-6 col-md-12">
                         <div className="about-content-2">
                             <div className="section-heading">
  

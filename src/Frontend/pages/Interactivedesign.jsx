@@ -5,10 +5,10 @@ import bgimg from '../assets/img/bg-img/page-header-bg.jpg'
 import phs1 from '../assets/img/shapes/page-header-shape-1.png'
 import phs2 from '../assets/img/shapes/page-header-shape-2.png'
 import phs3 from '../assets/img/shapes/page-header-shape-3.png'
-import web1 from '../assets/img/images/Elearning.png'
-import web2 from '../assets/img/images/gmdc.png'
-import web3 from '../assets/img/images/bdc.png'
-import web4 from '../assets/img/images/EDC.png'
+import web1 from '../assets/img/images/Elearning.webp'
+import web2 from '../assets/img/images/gmdc.webp'
+import web3 from '../assets/img/images/bdc.webp'
+import web4 from '../assets/img/images/EDC.webp'
 import VideoGallery from '../Components/video_components/VideoGallery';
 import VideoModal from '../Components/video_components/VideoModal';
 import Pagination from '../Components/video_components/Pagination';

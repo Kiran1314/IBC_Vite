@@ -6,6 +6,7 @@ import Heroimg1 from '../assets/img/images/hero-img-1.webp'
 import Heroimg2 from '../assets/img/images/hero-img-2.webp'
 import Heroimg3 from '../assets/img/images/hero-img-3.webp'
 import Heroimg from '../assets/img/images/hero-img.webp'
+import Herobtn from '../assets/img/bg-img/hero-btn-bg.png'
 import Processshp from '../assets/img/shapes/process-shape.png'
 import Processimg from '../assets/img/images/process-img.png'
 import RoundShp from '../assets/img/shapes/round-shape.png'
@@ -25,7 +26,7 @@ import service6 from '../assets/img/images/services/Time_lapse.webp'
 import service7 from '../assets/img/images/services/Elearning_web.webp'
 import service8 from '../assets/img/images/services/Educational_Tutorials.webp'
 import faqshp1 from '../assets/img/shapes/faq-shape-1.png'
-import faqimg from '../assets/img/images/faq-img.png'
+import faqimg from '../assets/img/images/faq-img.webp'
 import project1 from '../assets/img/project/project-1.webp'
 import project2 from '../assets/img/project/project-2.webp'
 import project3 from '../assets/img/project/project-3.webp'
@@ -126,7 +127,7 @@ export default function Home() {
                     <h4 className="sub-title anim-text">Transforming</h4>
                     <h2 className="title anim-text">Visions into</h2>
                     <h3 className="bottom-title anim-text">Digital Reality</h3>
-                    <a href="/about" className="hero-btn"> <FontAwesomeIcon icon={faArrowUpRightDots} /> </a>
+                    <a href="/about" className="hero-btn"> <LazyLoadImage src={Herobtn} style={{zIndex:-1}} alt="hero"/>  </a>
                 </div>
             </div>
         </section>
@@ -730,7 +731,7 @@ export default function Home() {
                                         <li><i className="fa-light fa-user"></i>Post by: Admin</li>
                                     </ul>
                                     <h3 className="title"><a href="/audio_services">Audio Services - The Power of Voice</a></h3>
-                                    <a href="/audio_services" className="rr-primary-btn blog-btn">Read More &nbsp; <FontAwesomeIcon icon={faArrowRight} /> </a>
+                                    <a href="/audio_services" className="rr-primary-btn blog-btn"> Audio Services &nbsp; <FontAwesomeIcon icon={faArrowRight} /> </a>
                                 </div>
                             </div>
                         </div>
@@ -747,7 +748,7 @@ export default function Home() {
                                         <li><i className="fa-light fa-user"></i>Post by: Admin</li>
                                     </ul>
                                     <h3 className="title"><a href="/photography_services">Photography by IBC Studio</a></h3>
-                                    <a href="/photography_services" className="rr-primary-btn blog-btn">Read More &nbsp; <FontAwesomeIcon icon={faArrowRight} /> </a>
+                                    <a href="/photography_services" className="rr-primary-btn blog-btn">Photography Services &nbsp; <FontAwesomeIcon icon={faArrowRight} /> </a>
                                 </div>
                             </div>
                         </div>
@@ -764,7 +765,7 @@ export default function Home() {
                                         <li><i className="fa-light fa-user"></i>Post by: Admin</li>
                                     </ul>
                                     <h3 className="title"><a href="/video_services">Video Services - Capturing Excellence</a></h3>
-                                    <a href="/video_services" className="rr-primary-btn blog-btn">Read More &nbsp; <FontAwesomeIcon icon={faArrowRight} /> </a>
+                                    <a href="/video_services" className="rr-primary-btn blog-btn">Video Services &nbsp; <FontAwesomeIcon icon={faArrowRight} /> </a>
                                 </div>
                             </div>
                         </div>

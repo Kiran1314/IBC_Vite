@@ -18,6 +18,7 @@ const BillForm = ({ onSubmit }) => {
         <label class="col-sm-2 col-form-label">Bill Description</label>
         <div class="col-sm-3">
         <input class="form-control"
+        placeholder="Enter Bill Description"
           type="text"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
@@ -29,6 +30,7 @@ const BillForm = ({ onSubmit }) => {
         <label class="col-sm-2 col-form-label">Bill Amount (USD $)</label>
         <div class="col-sm-3">
         <input class="form-control"
+          placeholder="Enter Bill Amount"
           type="number"
           step="0.01"
           value={amount}
@@ -41,6 +43,7 @@ const BillForm = ({ onSubmit }) => {
         <label class="col-sm-2 col-form-label">Invoice Number</label>
         <div class="col-sm-3">
         <input class="form-control"
+          placeholder="Enter Invoice Number"
           type="text"
           value={invoiceId}
           onChange={(e) => setInvoiceId(e.target.value)}

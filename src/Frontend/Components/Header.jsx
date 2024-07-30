@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from './Logo.png'
-import ytblive from '../../Frontend/assets/img/images/ytblive.png'
+import ytblive from '../../Frontend/assets/img/images/ytblive.webp'
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faFacebookF , faInstagram, faLinkedin, faThreads, faYoutube } from '@fortawesome/free-brands-svg-icons';
