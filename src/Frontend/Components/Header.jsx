@@ -126,7 +126,7 @@ export default function Header() {
                 </div>
                 <ul className="side-menu-social">
                     <li className="facebook"><a href="https://www.facebook.com/IBCStudioUAE/">  <FontAwesomeIcon icon={faFacebookF} /> </a></li>
-                    <li className="instagram"><a href="https://www.instagram.com/ibcstudiouae/">  <FontAwesomeIcon icon={faInstagram} /> </a></li>
+                    <li className="instagram"><a href="https://www.instagram.com/ibc.studiouae">  <FontAwesomeIcon icon={faInstagram} /> </a></li>
                     <li className="threads"><a href="https://www.threads.net/@ibcstudiouae">  <FontAwesomeIcon icon={faThreads} /> </a></li>
                     <li className="linkedin"><a href="https://www.linkedin.com/in/ibcstudiouae/">  <FontAwesomeIcon icon={faLinkedin} /> </a></li>
                     <li className="youtube"><a href="https://www.youtube.com/@ibcstudiome">  <FontAwesomeIcon icon={faYoutube} /> </a></li>

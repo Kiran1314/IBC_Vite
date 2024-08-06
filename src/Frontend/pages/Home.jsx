@@ -6,7 +6,7 @@ import Heroimg1 from '../assets/img/images/hero-img-1.webp'
 import Heroimg2 from '../assets/img/images/hero-img-2.webp'
 import Heroimg3 from '../assets/img/images/hero-img-3.webp'
 import Heroimg from '../assets/img/images/hero-img.webp'
-import Herobtn from '../assets/img/bg-img/hero-btn-bg.png'
+import Herobtn from '../assets/img/images/hero-btn-bg.webp'
 import Processshp from '../assets/img/shapes/process-shape.png'
 import Processimg from '../assets/img/images/process-img.png'
 import RoundShp from '../assets/img/shapes/round-shape.png'
@@ -33,6 +33,7 @@ import project3 from '../assets/img/project/project-3.webp'
 import post1 from '../assets/img/blog/post-1.webp'
 import post2 from '../assets/img/blog/post-2.webp'
 import post3 from '../assets/img/blog/post-3.webp'
+import post4 from '../assets/img/blog/post-4.webp'
 import client1 from '../assets/img/clients/ADNEC.webp'
 import client2 from '../assets/img/clients/Air arabia.webp'
 import client3 from '../assets/img/clients/Al-Futtaim Group.webp'
@@ -57,28 +58,28 @@ import process3 from '../assets/img/icon/process-3.png'
 import process4 from '../assets/img/icon/process-4.png' 
 import Thumbnail1 from '../assets/img/images/Thumbnail1.webp'
 import Thumbnail2 from '../assets/img/images/Thumbnail2.webp'
-import videobg from '../assets/video/Showreel.webm';
+import videobg from '../assets/video/Showreel.webm'
 import edu_vid from '../assets/video/edu.webm'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowUpRightDots } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight, faArrowUpRightDots } from '@fortawesome/free-solid-svg-icons'
  
 
 /*  
 import LazyBackgroundVideo from '../Components/LazyBackgroundVideo'; */
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyLoadImage } from "react-lazy-load-image-component" 
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react' 
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
+import 'swiper/css' 
+import 'swiper/css/navigation' 
 
  
 
 // import required modules
-import { Navigation } from 'swiper/modules';
-import { Seo } from '../Components/Seo';
+import { Navigation } from 'swiper/modules' 
+import { Seo } from '../Components/Seo' 
 
 
 export default function Home() {
@@ -121,7 +122,7 @@ export default function Home() {
                 <LazyLoadImage src={Heroimg2} alt="hero"/>
                 <LazyLoadImage src={Heroimg3} alt="hero"/>
             </div>
-            <div className="hero-img"><img src={Heroimg} alt="hero"/></div>
+            <div className="hero-img"><LazyLoadImage  src={Heroimg} alt="heroimg"/></div>
             <div className="container">
                 <div className="hero-content">
                     <h4 className="sub-title anim-text">Transforming</h4>
@@ -719,6 +720,24 @@ export default function Home() {
                     <h2 className="section-title" data-text-animation data-split="word" data-duration="1">Check Our Company Inside Story</h2>
                 </div>
                 <div className="post-wrap">
+                <div className="post-card-wrap fade-top">
+                        <div className="post-card">
+                            <div className="post-thumb">
+                                <LazyLoadImage src={post4} alt="post"/>
+                            </div>
+                            <div className="post-content-wrap">
+                                <div className="post-content">
+                                    <ul className="post-meta">
+                                        <li><i className="fa-sharp fa-regular fa-clock"></i>06 July, 2024</li>
+                                        <li><i className="fa-light fa-user"></i>Post by: Admin</li>
+                                    </ul>
+                                    <h3 className="title"><a href="/video_shoot_benefits">The Benefits of Video Shoots for Businesses</a></h3>
+                                    <a href="/video_shoot_benefits" className="rr-primary-btn blog-btn"> Video Services &nbsp; <FontAwesomeIcon icon={faArrowRight} /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     
                     <div className="post-card-wrap fade-top">
                         <div className="post-card">
                             <div className="post-thumb">

@@ -87,7 +87,7 @@ export default function Footer() {
                         </li>
                        
                         <li className="instagram">
-                            <a rel="noreferrer" href="https://www.instagram.com/ibcstudiouae/" target='_blank' aria-label="IBC Studio InstagramPg"><FontAwesomeIcon icon={faInstagram} /></a>
+                            <a rel="noreferrer" href="https://www.instagram.com/ibc.studiouae" target='_blank' aria-label="IBC Studio InstagramPg"><FontAwesomeIcon icon={faInstagram} /></a>
                         </li>
 
                         <li className="threads">
